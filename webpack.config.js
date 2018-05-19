@@ -49,7 +49,9 @@ module.exports = {
 		new webpack.DefinePlugin({
 			  'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
 		}),
-		new ManifestPlugin(),
+		new ManifestPlugin({
+			writeToFileEmit: true // Needed for PHP and Webpack Proxy
+		}),
 		],
 
 	stats: { colors: true },
@@ -64,14 +66,11 @@ module.exports = {
 	devServer: {
 		port: process.env.PORT || 8080,
 		host: 'localhost',
-		publicPath: '/html/',
 		contentBase: './src',
-		historyApiFallback: true,
 		open: true,
-		openPage: '',
 		proxy: {
-			'/': { // path pattern to rewrite
-			   target: 'http://localhost',
+			'/': {
+			   target: 'http://localhost'
 			}
 		}
 	}
