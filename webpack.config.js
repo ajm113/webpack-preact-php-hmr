@@ -14,14 +14,12 @@ const isProduction = JSON.parse(process.env.PROD_ENV || '0');
 
 module.exports = {
 	entry: './index.js',
-	mode: isProduction ? 'production' : 'development',
 	context: APP_DIR,
 	output: {
 		path: BUILD_DIR,
 		filename: '[name]-[hash].js',
 		publicPath: '/assets/'
 	},
-	devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
 	module : {
 		rules : [
 			{
@@ -67,7 +65,6 @@ module.exports = {
 		port: process.env.PORT || 8080,
 		host: 'localhost',
 		contentBase: './src',
-		open: true,
 		proxy: {
 			'/': {
 			   target: 'http://localhost'
