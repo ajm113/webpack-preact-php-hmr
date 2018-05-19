@@ -4,6 +4,9 @@
   "description": "Simple test project using Webpack, Preact, and some PHP to create a test app using HMR.",
   "main": "index.js",
   "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
+    "prestart": "npm run build",
+    "build": "cross-env NODE_ENV=production webpack --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,12 +37,14 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.1.5",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "style-loader": "^0.21.0",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "webpack-manifest-plugin": "^2.0.2"
   }
 }
