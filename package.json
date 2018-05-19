@@ -22,5 +22,24 @@
   "bugs": {
     "url": "https://github.com/ajm113/webpack-preact-php-hmr/issues"
   },
-  "homepage": "https://github.com/ajm113/webpack-preact-php-hmr#readme"
+  "homepage": "https://github.com/ajm113/webpack-preact-php-hmr#readme",
+  "dependencies": {
+    "preact": "^8.2.9"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.1.5",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  }
 }
