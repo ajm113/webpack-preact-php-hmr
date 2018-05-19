@@ -67,7 +67,6 @@ module.exports = {
 		port: process.env.PORT || 8080,
 		host: 'localhost',
 		contentBase: './src',
-		open: true,
 		proxy: {
 			'/': {
 			   target: 'http://localhost'
