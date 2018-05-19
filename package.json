@@ -1,0 +1,26 @@
+{
+  "name": "webpack-preact-php-hmr",
+  "version": "0.0.1",
+  "description": "Simple test project using Webpack, Preact, and some PHP to create a test app using HMR.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajm113/webpack-preact-php-hmr.git"
+  },
+  "keywords": [
+    "preact",
+    "webpack",
+    "hmr",
+    "example",
+    "test"
+  ],
+  "author": "Andrew McRobb <andrewmcrobb@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajm113/webpack-preact-php-hmr/issues"
+  },
+  "homepage": "https://github.com/ajm113/webpack-preact-php-hmr#readme"
+}
